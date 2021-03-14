@@ -1,0 +1,19 @@
+@{
+    ViewData["Title"] = "Add Student Page";
+}
+<h1>Add New Student Page</h1>
+<form action="/student/SaveStudent" method="POST">
+    <div class="mb-3">
+        <label for="Name" class="form-label"></label>
+        <input class="form-control" type="text" id="Name" name="Name">
+    </div>
+    <div class="mb-3">
+        <label for="Age" class="form-label"></label>
+        <input class="form-control" type="number" id="Age" name="Age">
+    </div>
+    <div class="mb-3">
+        <label for="Address" class="form-label"></label>
+        <input class="form-control" type="text" id="Address" name="Address">
+    </div>
+    <button class="btn btn-primary" type="submit">Save</button>
+</form>
